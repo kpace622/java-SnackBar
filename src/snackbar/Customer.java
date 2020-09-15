@@ -38,4 +38,9 @@ public class Customer {
   public void buySnacks(double num) {
     this.cash = this.cash - num;
   }
+
+  @Override
+  public String toString() {
+    return name + " has " + cash + " cash.";
+  }
 }

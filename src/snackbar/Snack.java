@@ -49,19 +49,11 @@ public class Snack {
       this.vendingMachineId = vendingMachineId;
     }
 
-    public int addQuantity(int ...args) {
-      int numberOfSnacks = 0;
-      for (int x: args){
-        numberOfSnacks += x;
-      }
-      return numberOfSnacks;
+    public void addQuantity(int num) {
+      this.quantity = this.quantity + num;
     }
   
-    public double buySnacks(double ...args) {
-      double cost = 0;
-      for (double x: args) {
-        cost += x;
-      }
-      return cost;
+    public void buySnacks(int num) {
+      this.quantity = this.quantity - num;
     }
 }
